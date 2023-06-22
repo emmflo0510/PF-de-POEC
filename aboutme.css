@@ -1,0 +1,45 @@
+main {
+    color:black;
+}
+
+main h2 {
+    display: flex;
+    justify-content: center;
+    color:#4682b4;
+    
+}
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.container:hover::before {
+    position: absolute;
+    transform: translateX(-50%);
+    color:#fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+.container:hover ::after{
+    position: absolute;
+    transform: translateX(-50%);
+    border-style: solid;
+    
+}
+
+.container:hover::before, .container:hover::after{
+    opacity: 1;
+}

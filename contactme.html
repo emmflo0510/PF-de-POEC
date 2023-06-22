@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css"
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+        <div class="back">
+            <img src="img/istockphoto-647956948-612x612.jpg" alt="back"class="back">
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="experiences.html">Mes experiences</a>
+                    </li>
+                    <li>
+                        <a href="aboutme.html">A propos de moi</a>
+                    </li>
+                    <li>
+                        <a href="contactme.html">Contactez moi</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form class="contact" action="https..." methode="post">
+            <div>
+                <label for="whoAreYou">Qui etes vous?</label>
+                <select name="whoAreYou" id="whoAreYou">
+                    <option value="1">Une entreprise</option>
+                    <option value="2">Un particulier</option>
+                </select>
+            </div>
+            <div>
+                <label for="yourMail">votre email</label>
+                <input name="yourMail" id="yourId" required>
+            </div>
+            <div>
+                <label for="reason">Objet de votre message</label>
+                <input name="reason" id="object" required>
+            </div>
+            <div>
+                <label for="subject">Votre message</label>
+                <textarea id="message" name="subject" row="10" cols="50" placholder="Entrez votre texte"></textarea>
+                <input type="submit" value="send">
+            </div>
+            <div>
+                <button> Envoyer</button>
+            </div>
+        </form>
+        <p>J'essaie de traiter les message dans les meilleurs délais. 
+            <br>Merci pour votre patience.
+        </p>
+    </main>
+    
+
+</body>
+</html>
